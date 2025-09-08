@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         // ExoPlayer 初期化
         player = ExoPlayer.Builder(this).build()
-        val mediaItem = MediaItem.fromUri("asset:///green_flag.mp4".toUri())
+        val mediaItem = MediaItem.fromUri("asset:///vuforiasizzlereel.m4v".toUri())
         player.setMediaItem(mediaItem)
         player.prepare()
 
@@ -32,9 +32,7 @@ class MainActivity : AppCompatActivity() {
                 player.setVideoSurface(surface)
                 player.playWhenReady = true
             }
-
         }
-
     }
 
     override fun onPause() {
